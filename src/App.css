@@ -1,0 +1,277 @@
+body{
+  font-family: Arial;
+  margin: 0 auto;
+}
+
+button{
+  padding: 7px;
+  width: 150px;
+  border-radius: 7px;
+  background-color: lightgrey;
+  color: darkblue;
+  transition: color ease 0.3s, background-color ease 0.3s;
+}
+
+button:hover{
+  background-color: darkblue;
+  color: antiquewhite;
+  transition: color ease 0.3s, background-color ease 0.3s;
+}
+
+.sidebar{
+  width: 15%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  background-color: darkblue;
+  color: antiquewhite;
+  border-right: black 1px solid;
+}
+
+.sidebar img{
+  width: 40%;
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.sidebar h2{
+  margin: 15px 0px 5px 40px;
+  text-align: left;
+}
+
+.sidebar h4{
+  margin-top: 0;
+  margin-right: 35px;
+  text-align: right;
+  font-style: italic;
+}
+
+.sidebar ul li{
+  padding: 5px;
+}
+
+.sidebar ul li a{
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navbar{
+  width: 85%;
+  height: 80px;
+  background-color: darkgrey;
+  float: right;
+  border-top: dimgrey 1px solid;
+  border-bottom: dimgrey 1px solid;
+}
+
+.navbar span{
+  float: right;
+  margin-right: 60px;
+  line-height: 70px;
+  vertical-align: middle;
+}
+
+.navbar span i{
+  margin-right: 10px;
+}
+
+.content{
+  width: 81%;
+  float: right;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.content__row{
+  display: flex;
+}
+
+.box{
+  border: dimgrey 1px solid;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 10px 10px 5px lightgrey;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  transition: right ease 0.5s, bottom ease 0.5s;
+}
+
+.box:hover{
+  right: -7px;
+  bottom: -7px;
+}
+
+.wallet {
+  flex: 1;
+}
+
+.profile{
+  flex: 2 1;
+  margin-left: 25px;
+}
+
+.transactions{
+  flex: 1;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.box__title{
+  text-align: right;
+  border-bottom: dimgrey 1px solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: darkblue;
+}
+
+.box__title--text{
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.box__body{
+  padding: 10px 30px 5px 20px;
+}
+
+.wallet__detail p{
+  margin-top: 0;
+  color: darkblue;
+  font-style: italic;
+}
+
+.wallet__detail h4{
+  margin-top: 0;
+  text-align: right;
+  font-size: 18px;
+}
+
+.wallet__detail--transactions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.form__detail--transactions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__detail--input label{
+  font-size: 14px;
+}
+
+.form__detail--input input{
+  margin-top: 7px;
+}
+
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible{
+  visibility: visible;
+  transition: opacity linear 0.3s, right ease 0.5s, bottom ease 0.5s;
+}
+
+.profile__body--detail{
+  margin-bottom: 15px;
+}
+
+.profile__body--field{
+  width: 30%;
+  float: left;
+  color: darkblue;
+  font-style: italic;
+}
+
+#address {
+  line-height: 20px;
+}
+
+.profile__body--value{
+  width: 100%;
+}
+
+.profile__edit{
+  bottom: 35px;
+}
+
+.profile__edit button{
+  margin-top: 30px;
+  position: relative;
+  left: 250px;
+}
+
+#show-transactions{
+  position: absolute;
+  bottom: 35px;
+  left: 125px;
+}
+#transactions-table{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+#transactions-table th{
+  background-color: darkblue;
+  color: antiquewhite;
+}
+
+#transactions-table th:hover{
+  cursor: pointer;
+}
+
+#transactions-table th i{
+  margin-left: 10px;
+}
+
+#transactions-table tr td, th{
+  border-bottom: dimgrey 1px solid;
+  padding: 15px;
+}
+
+#transactions-table tr:nth-child(even){
+  background-color: lightgrey;
+}
+
+#transactions-table tbody tr:hover{
+  font-weight: bold;
+}
+
+.transaction__form{
+  text-align: center;
+}
+
+.transaction__filter{
+  text-align: center;
+  margin-top: 35px;
+}
+
+.transaction__form span{
+  margin-left: 20px;
+}
+
+.transaction__filter span{
+  margin-left: 20px;
+}
+
+.transaction__form div{
+  margin-top: 15px;
+}
